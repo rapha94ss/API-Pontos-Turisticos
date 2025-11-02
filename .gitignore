@@ -1,0 +1,18 @@
+# Build
+bin/
+obj/
+**/bin/
+**/obj/
+
+# VS
+.vs/
+
+# User-specific
+*.user
+*.suo
+
+# Logs
+*.log
+
+# EF Core Migrations snapshots
+**/Migrations/\*_Snapshot.cs
