@@ -39,5 +39,4 @@ src/
 
 ## Observações
 - Este pacote não inclui frontend. A API está pronta para ser consumida por um SPA (React) ou páginas server-rendered.
-- As validações básicas estão na camada Application.
 
