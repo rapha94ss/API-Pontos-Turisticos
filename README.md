@@ -1,4 +1,4 @@
-# TouristSpots (Starter)
+# TouristSpots
 
 Solução em camadas (.NET 8 + ASP.NET Core Web API + EF Core + SQL Server).
 
