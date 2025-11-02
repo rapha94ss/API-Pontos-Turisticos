@@ -1,18 +1,122 @@
-# Build
+# ------------------------
+# .NET / Visual Studio
+# ------------------------
 bin/
 obj/
 **/bin/
 **/obj/
-
-# VS
-.vs/
-
-# User-specific
 *.user
 *.suo
-
-# Logs
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
+*.ilk
 *.log
+*.pdb
+*.cache
+*.db
+*.DS_Store
 
-# EF Core Migrations snapshots
-**/Migrations/\*_Snapshot.cs
+# EF Core Migrations snapshots (evita commitar snapshots gerados automaticamente)
+**/Migrations/**/Snapshot*
+**/Migrations/**/ModelSnapshot*
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+
+# dotnet user secrets
+secrets.json
+*.usersecrets
+
+# ------------------------
+# Node / Frontend
+# ------------------------
+# frontend folder (ajuste o nome se necessário)
+tourist-spots-frontend/node_modules/
+tourist-spots-frontend/build/
+tourist-spots-frontend/dist/
+tourist-spots-frontend/.parcel-cache/
+tourist-spots-frontend/.pnp/
+tourist-spots-frontend/.pnp.js
+
+# Environment files
+*.env
+*.env.*
+tourist-spots-frontend/.env
+tourist-spots-frontend/.env.local
+tourist-spots-frontend/.env.development.local
+tourist-spots-frontend/.env.test.local
+tourist-spots-frontend/.env.production.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------
+# Build / output
+# ------------------------
+build/
+publish/
+dist/
+*.zip
+*.tar.gz
+
+# ------------------------
+# OS files
+# ------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ------------------------
+# IDE / Editor files
+# ------------------------
+*.swp
+*~.nib
+*.sublime-workspace
+*.sublime-project
+
+# JetBrains
+*.iml
+out/
+
+# ------------------------
+# Secrets / config / local databases
+# ------------------------
+appsettings*.json
+src/**/appsettings*.json
+**/appsettings.Development.json
+**/appsettings.Local.json
+*.pem
+*.key
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Certificates
+*.pfx
+*.p12
+
+# ------------------------
+# Misc
+# ------------------------
+coverage/
+coverage-final.json
+.nyc_output/
+jest-cache/
+.vscode-test/
+.cache/
+.terraforms/
+
+# If some files were already committed that should be ignored, remove them from the index:
+# git rm -r --cached tourist-spots-frontend/node_modules tourist-spots-frontend/build
